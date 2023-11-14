@@ -19,7 +19,20 @@
     </a>
 
     <script>
-        
+        var numeroSecreto = parseInt(Math.random(1) * 10)
+
+        while (chute != numeroSecreto) {
+            var chute = prompt('Digite um número entre 1 e 10')
+
+            // Se o chute for igual ao número secreto dispara o alert de acertou
+            if (chute == numeroSecreto) {
+                alert('Acertou!')
+            } else if (chute < numeroSecreto) {
+                alert('Você errou, o número é maior')
+            } else {
+                alert('Você errou, o número é menor')
+            }
+        }
     </script>
 
 </body>
