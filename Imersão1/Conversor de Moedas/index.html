@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo/style.css">
+        <title>Conversor de moedas</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="page-title">
+            Conversor de moedas
+            </h1>
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+        </div>
+        <a href="https://alura.com.br/" target="_blank">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+            <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png">
+        </a>
+    </body>
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        var valorEmDolar = 30;
+        var cotacaoDoDolar = 5.32;
+
+        var valorEmReal = valorEmDolar * cotacaoDoDolar;
+        valorEmReal = valorEmReal.toFixed(2);
+
+        window.alert(`Olá ${nome}, hoje vou mostrar a cotação do dólar para você, clique em continuar...`);
+
+        window.alert(
+        `O valor em real é R$${valorEmReal} e o valor em dolar é $${valorEmDolar}`
+        );
+
+    </script>
+
+</html>
